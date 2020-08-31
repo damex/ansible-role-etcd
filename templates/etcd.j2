@@ -1,0 +1,7 @@
+# {{ ansible_managed }}
+
+{% if etcd_configuration is defined and etcd_configuration | length %}
+{% for etcd_configuration_key, etcd_configuration_value in etcd_configuration.items() %}
+{{ etcd_configuration_key }}={{ etcd_configuration_value }}
+{% endfor %}
+{% endif %}

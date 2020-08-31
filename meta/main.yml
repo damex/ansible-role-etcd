@@ -1,0 +1,19 @@
+---
+galaxy_info:
+  role_name: etcd
+  author: Roman Kuzmitskii
+  description: etcd role
+  license: GPLv2
+  min_ansible_version: 2.9
+  galaxy_tags:
+    - etcd
+  platforms:
+    - name: "Debian"
+      versions:
+        - "buster"
+    - name: "Ubuntu"
+      versions:
+        - "focal"
+dependencies:
+  - role: "damex.package"
+  - role: "damex.systemd_service"

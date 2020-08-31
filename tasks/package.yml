@@ -1,0 +1,8 @@
+---
+- name: ensure etcd package
+  include_role:
+    name: "damex.package"
+  vars:
+    package_packages:
+      - name: "{{ etcd_package_name }}"
+        state: "{{ etcd_package_state }}"

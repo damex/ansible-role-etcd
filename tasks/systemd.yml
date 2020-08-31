@@ -1,0 +1,7 @@
+---
+- name: ensure systemd service
+  include_role:
+    name: "damex.systemd_service"
+  vars:
+    systemd_service_name: "{{ etcd_service_name }}"
+    systemd_service_restart_on: "{{ etcd_configuration_file_state.changed }}"

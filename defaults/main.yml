@@ -1,0 +1,7 @@
+---
+etcd_package_name: "etcd"
+etcd_package_state: "present"
+etcd_service_name: "etcd"
+etcd_configuration_directory: "/etc/default"
+etcd_configuration_file: "{{ etcd_configuration_directory }}/etcd"
+etcd_configuration: {}

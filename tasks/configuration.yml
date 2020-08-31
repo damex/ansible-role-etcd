@@ -1,0 +1,10 @@
+---
+- name: ensure etcd configuration
+  template:
+    src: "etcd.j2"
+    dest: "{{ etcd_configuration_file }}"
+    owner: root
+    group: root
+    mode: 0644
+  become: true
+  register: etcd_configuration_file_state
